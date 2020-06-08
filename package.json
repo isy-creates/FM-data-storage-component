@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/isy-creates/fylo-data-storage-component.git"
+    "url": "git+https://github.com/frontendmentor-practice/fylo-data-storage-component.git"
   },
   "author": "Isy",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/isy-creates/fylo-data-storage-component/issues"
+    "url": "https://github.com/frontendmentor-practice/fylo-data-storage-component/issues"
   },
-  "homepage": "https://github.com/isy-creates/fylo-data-storage-component#readme",
+  "homepage": "https://github.com/frontendmentor-practice/fylo-data-storage-component#readme",
   "devDependencies": {
     "autoprefixer": "^9.7.5",
     "node-sass": "^4.13.1",
