@@ -1,3 +1,7 @@
-# Practise from Frontend Mentor - Flyo Data storage component 
+# Frontend Mentor - Fylo data storage component
 
-Find the exercise on https://www.frontendmentor.io/challenges/fylo-data-storage-component-1dZPRbV5n
+![Design preview for the Fylo data storage component coding challenge](./design/desktop-preview.jpg)
+
+## Welcome! 👋
+
+This is a practice project from Frontend Mentor coding challenge. 
