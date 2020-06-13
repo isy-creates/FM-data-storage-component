@@ -1,0 +1,138 @@
+*, *:before, *:after{
+  box-sizing: border-box;
+}
+
+strong {
+  font-weight: 700;
+}
+
+body {
+  background: url("images/bg-mobile.svg") bottom/cover no-repeat;
+  padding: 0 2rem;
+  color: $pale-blue;
+  height: 100vh;
+
+  @include respond(desktop) {
+    background: $very-dark-blue url("images/bg-desktop.svg") bottom/100% 58% no-repeat;
+  }
+}
+
+.storage {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 922px;
+  margin: 0 auto;
+  height: 100vh;
+
+  @include respond(desktop ) {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 50vh;
+  }
+}
+
+.p-control {
+  @include card-base($dark-blue, 4.0rem);
+  border-top-right-radius: 10rem;
+  margin-bottom: $medium;
+
+  @include respond(desktop ) {
+    flex:0 0 38%;
+    margin-bottom: 0;
+    align-self: flex-end;
+  }
+
+  &__logo {
+    margin-bottom: 3.3rem;
+  }
+
+  &__items{
+    display: flex;
+  }
+
+  &__item {
+    height: 4.8rem;
+    width: 4.8rem;
+    @include card-base($very-dark-blue, 0rem);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color .3s ease-in-out;
+
+    &:not(:last-of-type) {
+      margin-right: $medium;
+    }
+
+    &:hover {
+      background-color: $pale-blue;
+      cursor: pointer;
+    }
+  }
+}
+
+.p-info {
+  @include card-base($dark-blue, 4.0rem);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+
+  @include respond(desktop ) {
+    flex:0 0 55%;
+    align-self: flex-end;
+  }
+
+  &__intro {
+    margin-bottom: $medium;
+
+  }
+
+  &__text{
+    width: 100%;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__gb-left{
+    @include card-base(#ffffff, $medium);
+    display: flex;
+    position: absolute;
+    bottom: -20%;
+
+    @include respond(desktop ) {
+      right: 4rem;
+      bottom: 13.6rem;
+
+      &::after{
+        content:'';
+        display: block;
+        position: absolute;
+        right: 0;
+        bottom: -22px;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 30px 0 0 30px;
+        border-color: #ffffff transparent transparent transparent;
+        border-radius: .2rem 0 0 .2rem;
+      }
+    }
+
+    &--large{
+      font-size: 4rem;
+      font-weight: 700;
+      color: $very-dark-blue;
+      line-height: 4rem;
+    }
+    &--small{
+      color: $grayish-blue;
+      text-transform: uppercase;
+      font-size: 1.2rem;
+      align-self: center;
+      margin-left: 1rem;
+    }
+  }
+}

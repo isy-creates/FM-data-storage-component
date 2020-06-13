@@ -1,0 +1,16 @@
+@mixin respond($breakpoint) {
+
+  @if $breakpoint == tab-port {
+    @media only screen and (min-width: 600px) {
+      @content
+    }
+    //600px
+  }
+
+  @if $breakpoint == desktop {
+    @media only screen and (min-width: 900px) {
+      @content
+    }
+  }
+  //1200px
+}
