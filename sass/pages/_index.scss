@@ -7,13 +7,13 @@ strong {
 }
 
 body {
-  background: url("images/bg-mobile.svg") bottom/cover no-repeat;
+  background: url("../images/bg-mobile.svg") bottom/cover no-repeat;
   padding: 0 2rem;
   color: $pale-blue;
   height: 100vh;
 
   @include respond(desktop) {
-    background: $very-dark-blue url("images/bg-desktop.svg") bottom/100% 58% no-repeat;
+    background: $very-dark-blue url("../images/bg-desktop.svg") bottom/100% 58% no-repeat;
   }
 }
 
